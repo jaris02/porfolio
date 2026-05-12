@@ -53,5 +53,5 @@ Welcome to my professional portfolio. This project showcases my work as a Softwa
 ## Contact
 
 - **Email**: [zizuasmat@gmail.com](mailto:zizuasmat@gmail.com)
-- **LinkedIn**: [Siraj Mohammed](https://linkedin.com/in/zizuasmat)
+- **LinkedIn**: [Siraj Mohammed](https://www.linkedin.com/in/jaris02)
 - **GitHub**: [@jaris02](https://github.com/jaris02)

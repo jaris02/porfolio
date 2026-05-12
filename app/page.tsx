@@ -338,7 +338,7 @@ export default function Home() {
                 </button>
                 <div className="pt-6 border-t border-border/40 flex gap-6">
                    <a href="https://github.com/jaris02" className="text-secondary p-2 bg-surface border border-border rounded-lg"><Github className="w-4 h-4" /></a>
-                   <a href="https://linkedin.com/in/zizuasmat" className="text-secondary p-2 bg-surface border border-border rounded-lg"><Linkedin className="w-4 h-4" /></a>
+                   <a href="https://www.linkedin.com/in/jaris02" className="text-secondary p-2 bg-surface border border-border rounded-lg"><Linkedin className="w-4 h-4" /></a>
                    <a href="https://t.me/jaris02" className="text-secondary p-2 bg-surface border border-border rounded-lg"><Send className="w-4 h-4" /></a>
                 </div>
               </div>
@@ -414,10 +414,10 @@ export default function Home() {
                 className="flex flex-wrap gap-8 py-8 border-y border-border/40 text-[10px] font-mono text-secondary uppercase tracking-tighter"
               >
                 <a href="https://github.com/jaris02" className="flex items-center gap-1.5 hover:text-primary transition-colors"><Github className="w-3 h-3"/> GitHub</a>
-                <a href="https://linkedin.com/in/zizuasmat" className="flex items-center gap-1.5 hover:text-primary transition-colors"><Linkedin className="w-3 h-3"/> LinkedIn</a>
+                <a href="https://www.linkedin.com/in/jaris02" className="flex items-center gap-1.5 hover:text-primary transition-colors"><Linkedin className="w-3 h-3"/> LinkedIn</a>
                 <a href="https://t.me/jaris02" className="flex items-center gap-1.5 hover:text-primary transition-colors"><Send className="w-3 h-3"/> Telegram</a>
-                <a href="https://sirajmohammed.substack.com" className="flex items-center gap-1.5 hover:text-primary transition-colors"><BookOpen className="w-3 h-3"/> Substack</a>
-                <a href="https://twitter.com/jaris02" className="flex items-center gap-1.5 hover:text-primary transition-colors"><Twitter className="w-3 h-3"/> X</a>
+                <a href="https://siraj02.substack.com" className="flex items-center gap-1.5 hover:text-primary transition-colors"><BookOpen className="w-3 h-3"/> Substack</a>
+                <a href="https://x.com/SirajMD02" className="flex items-center gap-1.5 hover:text-primary transition-colors"><Twitter className="w-3 h-3"/> X</a>
               </motion.div>
             </header>
 
@@ -670,7 +670,7 @@ export default function Home() {
                     <h4 className="text-[10px] font-mono uppercase text-primary font-bold tracking-[0.2em]">Social Connect</h4>
                     <div className="flex flex-col gap-2">
                        <a href="https://github.com/jaris02" className="text-[11px] font-mono text-secondary hover:text-primary transition-colors uppercase tracking-widest">GitHub</a>
-                       <a href="https://twitter.com/jaris02" className="text-[11px] font-mono text-secondary hover:text-primary transition-colors uppercase tracking-widest">Twitter</a>
+                       <a href="https://x.com/SirajMD02" className="text-[11px] font-mono text-secondary hover:text-primary transition-colors uppercase tracking-widest">X</a>
                        <a href="https://t.me/jaris02" className="text-[11px] font-mono text-secondary hover:text-primary transition-colors uppercase tracking-widest">Telegram</a>
                     </div>
                   </div>
@@ -730,8 +730,8 @@ export default function Home() {
                   <div className="flex flex-wrap gap-x-8 gap-y-4 pt-12 border-t border-border/60">
                      {[
                        { name: 'Telegram', link: 'https://t.me/jaris02', icon: Send },
-                       { name: 'Substack', link: 'https://sirajmohammed.substack.com', icon: BookOpen },
-                       { name: 'X / Twitter', link: 'https://twitter.com/jaris02', icon: Twitter },
+                       { name: 'Substack', link: 'https://siraj02.substack.com', icon: BookOpen },
+                       { name: 'X', link: 'https://x.com/SirajMD02', icon: Twitter },
                      ].map((social) => (
                        <a key={social.name} href={social.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[11px] font-mono text-secondary hover:text-primary transition-all group">
                          <social.icon className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
