@@ -40,6 +40,8 @@ interface Project {
   image: string;
   gallery: string[];
   longDescription: string;
+  demo?: string;  // path to .gif demo file e.g. "/hospital-demo.gif"
+  thumb?: string; // thumbnail shown on card when demo is available
 }
 
 const PROJECTS: Project[] = [
@@ -51,7 +53,8 @@ const PROJECTS: Project[] = [
     type: "Web Application",
     tag: "EdTech",
     image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=600",
-    gallery: []
+    gallery: [],
+    // demo: "/wisdom-pass-demo.gif",  // ← add your GIF here when ready
   },
   {
     title: "TabibX",
@@ -61,7 +64,8 @@ const PROJECTS: Project[] = [
     type: "Web Application",
     tag: "AI / DevTools",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600",
-    gallery: []
+    gallery: [],
+    // demo: "/tabibx-demo.gif",  // ← add your GIF here when ready
   },
   {
     title: "Document Processing Gateway for Wollo University",
@@ -81,7 +85,9 @@ const PROJECTS: Project[] = [
       "/degree/degree6.png",
       "/degree/degree7.png",
       "/degree/degree8.png"
-    ]
+    ],
+    // demo: "/degree-demo.gif",  // ← add your GIF here when ready
+    thumb: "/degree/degree0.png",
   },
   {
     title: "KYC (Know Your Customer)",
@@ -105,7 +111,9 @@ const PROJECTS: Project[] = [
       "/kyc/kyc-documentsection11.png",
       "/kyc/kyc-documentsection12.png",
       "/kyc/kyc-documentsection13.png"
-    ]
+    ],
+    // demo: "/kyc-demo.gif",  // ← add your GIF here when ready
+    thumb: "/kyc/kyc-documentsection1.png",
   },
   {
     title: "Store Inventory App",
@@ -126,7 +134,9 @@ const PROJECTS: Project[] = [
       "/financial-report.png",
       "/Add-user.png",
       "/inventory-admin-dahs.png"
-    ]
+    ],
+    // demo: "/inventory-demo.gif",  // ← add your GIF here when ready
+    thumb: "/customer.png",
   },
   {
     title: "Hospital Management System",
@@ -147,7 +157,9 @@ const PROJECTS: Project[] = [
       "/hospital/diagnose.png",
       "/hospital/additional-diagnose.png",
       "/hospital/viewresult.png"
-    ]
+    ],
+    // demo: "/hospital-demo.gif",  // ← add your GIF here when ready
+    thumb: "/hospital/adduser-admin.png",
   }
 ];
 
@@ -600,9 +612,17 @@ export default function Home() {
                             <div className="p-2 bg-bg/80 backdrop-blur-md rounded-lg border border-border shadow-xl">
                               {p.type === 'Desktop Application' ? <Monitor className="w-4 h-4 text-primary" /> : <Layout className="w-4 h-4 text-primary" />}
                             </div>
-                            <span className="text-[9px] font-mono bg-primary text-bg px-2.5 py-1 rounded-full tracking-[0.2em] uppercase font-bold shadow-lg">
-                              {p.tag}
-                            </span>
+                            <div className="flex items-center gap-2">
+                              {p.demo && (
+                                <span className="text-[9px] font-mono bg-bg/80 backdrop-blur-md text-primary border border-primary/30 px-2 py-1 rounded-full tracking-[0.15em] uppercase font-bold flex items-center gap-1 shadow-lg">
+                                  <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+                                  DEMO
+                                </span>
+                              )}
+                              <span className="text-[9px] font-mono bg-primary text-bg px-2.5 py-1 rounded-full tracking-[0.2em] uppercase font-bold shadow-lg">
+                                {p.tag}
+                              </span>
+                            </div>
                          </div>
                          <div className="space-y-2 translate-y-[20px] group-hover/item:translate-y-0 transition-transform duration-500">
                             <div className="flex justify-between items-end">
@@ -809,27 +829,50 @@ export default function Home() {
                 <X className="w-5 h-5" />
               </button>
 
-                {/* Gallery Section */}
+                {/* Gallery / Demo Section */}
               <div className="w-full md:w-[60%] bg-bg/20 overflow-y-auto custom-scrollbar p-0 sm:p-6 space-y-6">
-                <div className="grid gap-4 sm:gap-8">
-                  {selectedProject.gallery.map((img, idx) => (
-                    <motion.div
-                      initial={{ opacity: 0, y: 30 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: idx * 0.15, type: 'spring', damping: 20 }}
-                      key={idx}
-                      className="relative overflow-hidden sm:rounded-2xl border border-border/50 group aspect-video sm:aspect-auto"
-                    >
-                      <Image 
-                        src={img} 
-                        alt={`${selectedProject.title} view ${idx + 1}`}
-                        width={1200}
-                        height={800}
-                        className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-1000"
-                      />
-                    </motion.div>
-                  ))}
-                </div>
+                {selectedProject.demo ? (
+                  /* ── GIF Demo Player ── */
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.97 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ type: 'spring', damping: 20 }}
+                    className="relative overflow-hidden sm:rounded-2xl border border-border/50 bg-black"
+                  >
+                    {/* GIF autoplays (loops silently by default) */}
+                    <img
+                      src={selectedProject.demo}
+                      alt={`${selectedProject.title} demo`}
+                      className="w-full h-auto object-contain"
+                    />
+                    {/* Demo label badge */}
+                    <div className="absolute top-3 left-3 flex items-center gap-1.5 bg-bg/80 backdrop-blur-md border border-primary/20 text-primary text-[9px] font-mono uppercase tracking-widest px-2.5 py-1 rounded-full shadow-lg">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+                      Live Demo
+                    </div>
+                  </motion.div>
+                ) : (
+                  /* ── Screenshot Gallery Fallback ── */
+                  <div className="grid gap-4 sm:gap-8">
+                    {selectedProject.gallery.map((img, idx) => (
+                      <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: idx * 0.15, type: 'spring', damping: 20 }}
+                        key={idx}
+                        className="relative overflow-hidden sm:rounded-2xl border border-border/50 group aspect-video sm:aspect-auto"
+                      >
+                        <Image 
+                          src={img} 
+                          alt={`${selectedProject.title} view ${idx + 1}`}
+                          width={1200}
+                          height={800}
+                          className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-1000"
+                        />
+                      </motion.div>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Details Section */}
