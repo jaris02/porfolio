@@ -10,8 +10,8 @@ Welcome to my professional portfolio. This project showcases my work as a Softwa
 
 ## Key Projects
 
-- **Wisdom Pass**: Full-stack educational platform features.
-- **TabibX**: AI-powered developer tool for codebase activity tracking.
+- **Wizdom Pass**: Full-stack educational platform features.
+- **TebibX**: AI-powered developer tool for codebase activity tracking.
 - **Document Processing Gateway**: Academic administration system for Wollo University.
 - **KYC (Know Your Customer)**: Secure identity verification platform.
 - **Store Inventory App**: IFRS-aligned inventory management system.

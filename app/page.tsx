@@ -46,26 +46,64 @@ interface Project {
 
 const PROJECTS: Project[] = [
   {
-    title: "Wisdom Pass",
+    title: "Wizdom Pass",
     description: "Full-stack educational platform features including authentication, content management, and interactive learning.",
     longDescription: "Worked on full-stack features for an educational platform using Next.js, FastAPI, Django, and Supabase. Built and maintained systems related to authentication, content management, and interactive learning workflows.",
     tech: ["Next.js", "FastAPI", "Django", "Supabase"],
+    link: "https://wizdompass.com",
     type: "Web Application",
     tag: "EdTech",
-    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=600",
-    gallery: [],
-    // demo: "/wisdom-pass-demo.gif",  // ← add your GIF here when ready
+    image: "/wizdompass/1.png",
+    gallery: [
+      "/wizdompass/1.png",
+      "/wizdompass/2.png",
+      "/wizdompass/3.png",
+      "/wizdompass/4.png",
+      "/wizdompass/Screenshot 2026-05-15 154802.png",
+      "/wizdompass/Screenshot 2026-05-15 154948.png",
+      "/wizdompass/Screenshot 2026-05-15 155004.png",
+      "/wizdompass/Screenshot 2026-05-15 155015.png",
+      "/wizdompass/Screenshot 2026-05-15 155146.png",
+      "/wizdompass/Screenshot 2026-05-15 155203.png",
+      "/wizdompass/Screenshot 2026-05-15 155242.png",
+      "/wizdompass/Screenshot 2026-05-15 155300.png",
+      "/wizdompass/Screenshot 2026-05-15 155325.png",
+      "/wizdompass/Screenshot 2026-05-15 160001.png",
+      "/wizdompass/Screenshot 2026-05-15 160036.png",
+      "/wizdompass/Screenshot 2026-05-15 160057.png",
+      "/wizdompass/Screenshot 2026-05-15 161233.png",
+      "/wizdompass/Screenshot 2026-05-15 161243.png"
+    ],
+    // demo: "/wizdompass-demo.gif",  // ← add your GIF here when ready
+    thumb: "/wizdompass/1.png",
   },
   {
-    title: "TabibX",
+    title: "TebibX",
     description: "AI-powered developer tool for codebase activity tracking, analysis, and workflow automation.",
     longDescription: "AI-powered developer tool designed to help engineers better understand, track, and share codebase activity across repositories, editors, and the command line. Contributed to backend systems, repository analysis workflows, and API integration.",
     tech: ["FastAPI", "React", "PostgreSQL", "Docker"],
+    link: "https://tebibx.dev",
     type: "Web Application",
     tag: "AI / DevTools",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600",
-    gallery: [],
-    // demo: "/tabibx-demo.gif",  // ← add your GIF here when ready
+    image: "/tebibx/1.png",
+    gallery: [
+      "/tebibx/1.png",
+      "/tebibx/2.png",
+      "/tebibx/3.png",
+      "/tebibx/4.png",
+      "/tebibx/5.png",
+      "/tebibx/6.png",
+      "/tebibx/7.png",
+      "/tebibx/8.png",
+      "/tebibx/9.png",
+      "/tebibx/Screenshot 2026-05-15 151706.png",
+      "/tebibx/Screenshot 2026-05-15 151930.png",
+      "/tebibx/Screenshot 2026-05-15 152001.png",
+      "/tebibx/Screenshot 2026-05-15 152819.png",
+      "/tebibx/Screenshot 2026-05-15 153152.png"
+    ],
+    // demo: "/tebibx-demo.gif",  // ← add your GIF here when ready
+    thumb: "/tebibx/1.png",
   },
   {
     title: "Document Processing Gateway for Wollo University",
@@ -168,13 +206,13 @@ const PROJECTS: Project[] = [
 const EXPERIENCE = [
   {
     role: "Full Stack Developer",
-    company: "Wisdom Pass",
+    company: "Wizdom Pass",
     period: "2025 – Present",
     desc: "Worked on full-stack features for an educational platform using Next.js, FastAPI, Django, and Supabase. Built and maintained systems related to authentication, content management, and interactive learning workflows. Contributed to backend API development, database structure, and frontend interfaces while focusing on performance, maintainability, and usability across the platform."
   },
   {
     role: "Full Stack Developer",
-    company: "TabibX",
+    company: "TebibX",
     period: "2025 – Present",
     desc: "Working on an AI-powered developer tool designed to help engineers better understand, track, and share codebase activity across repositories, editors, and the command line. Contributed to backend systems, repository analysis workflows, API integration, and developer-facing features using technologies such as FastAPI, React, Docker, PostgreSQL, and Nginx. Worked on features including repository summaries, commit-based changelog generation, live project monitoring, and workflow automation aimed at reducing context switching during development."
   },
