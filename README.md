@@ -1,57 +1,58 @@
-# Professional Portfolio
+# Siraj Mohammed — Engineering Portfolio
 
-<div align="center">
-  <img src="public/readme-image.png" alt="Portfolio Banner" width="100%" />
-</div>
+Portfolio for Siraj Mohammed, a full-stack developer with a strong backend focus. The site presents engineering work across institutional document processing, mapping data, developer tooling, education platforms, and business systems.
 
-## Overview
+## Live Portfolio
 
-Welcome to my professional portfolio. This project showcases my work as a Software Engineer, focusing on business operations, financial workflows, and high-integrity systems.
+[https://www.sirajtech.work](https://www.sirajtech.work)
 
-## Key Projects
+## Focus
 
-- **Wizdom Pass**: Full-stack educational platform features.
-- **TebibX**: AI-powered developer tool for codebase activity tracking.
-- **Document Processing Gateway**: Academic administration system for Wollo University.
-- **KYC (Know Your Customer)**: Secure identity verification platform.
-- **Store Inventory App**: IFRS-aligned inventory management system.
-- **Hospital Management System**: Comprehensive clinical enterprise solution.
+Backend-focused full-stack engineering with Go, Python, TypeScript, PostgreSQL, APIs, authentication, role-based access control, business workflows, and system integration.
+
+## Selected Work
+
+- **Document Processing Gateway — Wollo University:** End-to-end graduation-document processing and verification platform approved for institutional deployment.
+- **Gebeta Maps — Place Forge:** Go and PostgreSQL backend contributions to an internal location-data review and verification platform; contributed features reached deployment.
+- **TebibX:** Backend and full-stack contributions to an AI-powered developer platform for repository analysis, tracking, summaries, changelogs, monitoring, and workflow automation.
+- **Wizdom Pass:** Frontend and selected deployment contributions to an Ethiopian exam-preparation platform supporting Exit Exam, GAT, and COC workflows.
 
 ## Tech Stack
 
-- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
-- **Backend**: Node.js, FastAPI, Django, .NET, C#
-- **Database**: MS SQL Server, PostgreSQL, Supabase
-- **Tools**: Docker, Nginx, Git, GitHub Actions
+- **Languages:** Go, Python, TypeScript, JavaScript, SQL
+- **Backend:** Go, FastAPI, Node.js, Express.js, Django, REST APIs, Supabase
+- **Frontend:** Next.js, React, Tailwind CSS
+- **Databases:** PostgreSQL, MySQL, SQL Server, Prisma ORM
+- **Infrastructure:** Docker, Nginx, Git, GitHub Actions, Vercel
 
-## Getting Started
+## Running Locally
 
-### Prerequisites
+```bash
+npm install
+npm run dev
+```
 
-- Node.js (Latest LTS recommended)
-- npm or yarn
+Open [http://localhost:3000](http://localhost:3000).
 
-### Installation
+For a production build:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/jaris02/porfolio.git
-   ```
+```bash
+npm run build
+npm start
+```
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+## Project Structure
 
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+- `app/` — Next.js page, layout, and global styles
+- `components/` — reusable portfolio sections and interface components
+- `data/` — centralized profile, experience, project, skills, and navigation content
+- `types/` — shared TypeScript portfolio types
+- `public/` — project galleries and public assets
 
 ## Contact
 
-- **Email**: [zizuasmat@gmail.com](mailto:zizuasmat@gmail.com)
-- **LinkedIn**: [Siraj Mohammed](https://www.linkedin.com/in/jaris02)
-- **GitHub**: [@jaris02](https://github.com/jaris02)
+- Email: [sirajmd0202@gmail.com](mailto:sirajmd0202@gmail.com)
+- Portfolio: [www.sirajtech.work](https://www.sirajtech.work)
+- GitHub: [github.com/jaris02](https://github.com/jaris02)
+- LinkedIn: [linkedin.com/in/jaris02](https://www.linkedin.com/in/jaris02)
+- Telegram: [@jaris02](https://t.me/jaris02)

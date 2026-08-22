@@ -1,0 +1,46 @@
+import type { Experience } from "@/types/portfolio";
+
+export const EXPERIENCE: Experience[] = [
+  {
+    id: "wollo-document-gateway",
+    role: "Full-Stack Developer",
+    company: "Document Processing Gateway — Wollo University",
+    period: "October 2025 – Present",
+    context: "End-to-end university document-processing and verification platform.",
+    desc: "Designed and built the platform for graduation-document workflows used by alumni and university staff.",
+    highlights: ["Authentication, RBAC, KYC, and document verification", "Approval workflows, administrative dashboards, and backend APIs", "Approved for institutional deployment at Wollo University"],
+    tech: ["Next.js", "FastAPI", "Supabase", "PostgreSQL"],
+    featured: true,
+  },
+  {
+    id: "gebeta-place-forge",
+    role: "Backend Developer Intern",
+    company: "Gebeta Maps — Place Forge",
+    period: "June 2026 – August 2026",
+    context: "Internal platform for reviewing and improving location data.",
+    desc: "Contributed backend work in Go and PostgreSQL during a completed internship.",
+    highlights: ["Authentication and place-review APIs and workflows", "Verification-overview and PostgreSQL-backed operations", "Reusable Go packages and logging components", "Contributed features successfully reached deployment"],
+    tech: ["Go", "PostgreSQL", "Go Standard Library"],
+    featured: true,
+  },
+  {
+    id: "tebibx",
+    role: "Full-Stack Developer",
+    company: "TebibX",
+    period: "October 2025 – Present",
+    context: "AI-powered developer platform for understanding and tracking repository activity.",
+    desc: "Contribute across backend services, integrations, automation, and developer-facing features.",
+    highlights: ["Repository analysis, tracking, and summaries", "Commit-based changelogs and live project monitoring", "API integrations and workflow automation"],
+    tech: ["FastAPI", "PostgreSQL", "Docker", "Nginx", "React"],
+  },
+  {
+    id: "wizdom-pass",
+    role: "Frontend Developer",
+    company: "Wizdom Pass",
+    period: "March 2025 – April 2026",
+    context: "Ethiopian exam-preparation platform for Exit Exam, GAT, and COC workflows.",
+    desc: "Worked across frontend development and selected deployment and DevOps responsibilities.",
+    highlights: ["Authentication, content, and question management", "Mock exams, exam generation, and analytics", "Student progress and AI-assisted learning features"],
+    tech: ["Next.js", "React", "Django", "FastAPI", "Supabase"],
+  },
+];

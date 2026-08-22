@@ -2,8 +2,28 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Siraj Mohammed | Software Engineer",
-  description: "Software Engineer & Finance Enthusiast based in Addis Ababa, ET.",
+  metadataBase: new URL("https://www.sirajtech.work"),
+  title: "Siraj Mohammed | Full-Stack & Backend Software Engineer",
+  description: "Full-stack developer with a strong backend focus building production-ready systems with Go, TypeScript, Python, PostgreSQL, Next.js, and modern backend technologies.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    title: "Siraj Mohammed | Full-Stack & Backend Software Engineer",
+    description: "Full-stack developer with a strong backend focus building production-ready systems with Go, TypeScript, Python, PostgreSQL, Next.js, and modern backend technologies.",
+    siteName: "Siraj Mohammed Portfolio",
+  },
+  twitter: {
+    card: "summary",
+    title: "Siraj Mohammed | Full-Stack & Backend Software Engineer",
+    description: "Full-stack developer with a strong backend focus building production-ready systems with Go, TypeScript, Python, PostgreSQL, Next.js, and modern backend technologies.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
